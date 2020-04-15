@@ -1,0 +1,23 @@
+1. Declarative is telling you to specify what you want and Imperative is how to get it
+
+2. Data Definition Language(DDL) Data Manipulation Language(DML) Data Control Lauguage(DCL) 
+
+3. Store, manage, enforce the integrity of, and query data.
+
+4. when there are cases involving missing values or unknown values.
+
+5. enity integrity enforces integrity by assigning an attribute type so the attendant isnt NULL
+
+6. referencing relation, Foreign keys used to enforce referential integrity, and foreign keys define one or more attributes of a relation reference another candidate key's relation
+
+7. a characterization. being a column or a attribute.
+
+8. no, remove facCreds txt. then it 1NF will correct. because it must be unique and the attributes should be atomic.
+
+9. no, it already meets rule one (1NF) and it doesnt address the relationship between nonkey and candidate key
+
+10. no, other then meeting (2NF) the othere non keys are dependent candidate keys.
+
+11. SQL Server. Instance, Databases, Schemas, Objects
+
+12. Declaritive Data is already enforce in the data model and Procedural Data is enforced with code.

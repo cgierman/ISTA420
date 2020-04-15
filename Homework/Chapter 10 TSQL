@@ -1,0 +1,65 @@
+# Chance Gierman
+
+## 06 March 2020
+
+1. A transaction is a unit of work that might include multiple activities that query and modify
+data and that can also change the data definition.
+
+1. Atomicity A transaction is an atomic unit of work. Either all changes in the transaction
+take place or none do.
+Consistency The term consistency refers to the state of the data that the relational
+database management system (RDBMS) gives you access to as concurrent transactions
+modify and query it. 
+Isolation Isolation ensures that transactions access only consistent data. You control
+what consistency means to your transactions through a mechanism called isolation
+levels. 
+Durability Data changes are always written to the database’s transaction log on disk
+before they are written to the data portion of the database on disk.
+
+1. To obtain a lock on a certain resource type, your transaction must first obtain intent locks
+of the same mode on higher levels of granularity.
+
+1.  holds a lock on a data resource and another transaction requests an
+incompatible lock on the same resource
+
+1. request_session_id AS sid,
+resource_type AS restype,
+resource_database_id AS dbid,
+DB_NAME(resource_database_id) AS dbname,
+resource_description AS res,
+resource_associated_entity_id AS resid,
+request_mode AS mode,
+request_status AS status
+
+1. session_id AS sid,
+login_time,
+host_name,
+program_name,
+login_name,
+nt_user_name,
+last_request_start_time,
+last_request_end_time
+
+1.This view has a row for each active request, including blocked
+requests.
+session_id AS sid,
+blocking_session_id,
+command,
+sql_handle,
+database_id,
+wait_type,
+wait_time,
+wait_resource
+FROM sys.dm_exec_requests
+
+1. Isolation levels determine the level of consistency you get when you interact with data.
+
+1.  the SERIALIZABLE isolation level behaves similarly to REPEATABLE
+READ: namely, it requires a reader to obtain a shared lock to be able to read, and it keeps the
+lock until the end of the transaction. But the SERIALIZABLE isolation level adds another facet
+—logically, this isolation level causes a reader to lock the whole range of keys that qualify
+for the query’s filter. This means that the reader locks not only the existing rows that qualify
+for the query’s filter, but also future ones.
+
+1. A deadlock is a situation in which two or more sessions block each other. An example of a
+two-session deadlock is when session A blocks session B and session B blocks session A.

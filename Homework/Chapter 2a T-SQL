@@ -1,0 +1,25 @@
+# Chance A Gierman
+
+## 20Jan2020
+
+1. FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY.
+
+1. You specify the names of the tables you want to query and table operators on those tables.
+
+1. You specify a predicate or logical expression to fliter the rows returned by the From Phase.
+
+1. GROUP BY phase produces a group for each unique combination that appears in the data returned by the WHERE phase.
+
+1. Where as the WHERE clause is a row fliter, the HAVING clauseis a group fliter. only groups which the HAVING predicate evaluates to TRUE are returned by the HAVING phase to the next logical query processing phase.
+
+1. You specify the attributes (columns) you return in the result table of the query.
+
+1. Removes duplicates.
+
+1. Sorts the rows in the output for presentation purposes.
+
+1. The LIMIT clause is used to set an upper limit on the number of tuples returned by SQL.
+
+1. A proprietary T-SQL feature you can use to limit the number or percentage of rows your query returns.
+
+1. With the OFFSET clause you indicate how many rows to skip.

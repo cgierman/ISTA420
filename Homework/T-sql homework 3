@@ -1,0 +1,19 @@
+# Chance Gierman
+
+## 27 Jan 2020
+
+1. create rational data structure to avoid duplication of data and return structured data.
+
+1. matching each employee row with all order rows that have the same employee ID as in the employee row. 
+
+1. based on a match between the customer’s customer ID and the order’s customer ID, to return customers and their orders. The join type is a left outer join; therefore, the query also returns customers who did not place any orders
+
+1. It implements only one logical query processing phase—a Cartesian Product. This phase operates on the two tables provided as inputs and produces a Cartesian product of the two.
+
+1. left outer join, , inner join, right outer join.
+
+1. when you need the atrributes like order amount and order details together.
+
+1. Theres no difference youwill get the same result.
+
+1. there isnt anything wrong, C.custid column appears.

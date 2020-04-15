@@ -1,0 +1,23 @@
+# Chance Gierman
+
+## 02 Feb 2020
+
+1. query within a query.
+
+1. Self-contained subqueries are subqueries that are independent of the tables in the outer query. Self-contained subqueries are convenient to debug, because you can always highlight the inner query, run it, and ensure that it does what it’s supposed to do. 
+
+1. Correlated subqueries are subqueries that refer to attributes from the tables that appear in the outer query. This means the subquery is dependent on the outer query and cannot be invoked independently.
+
+1. A scalar subquery is a subquery that returns a single value. For example, suppose you need to query the Orders table in the TSQLV4 database and return information about the order that has the maximum order ID in the table.
+
+1. A multivalued subquery is a subquery that returns multiple values as a single column. write a query that	returns	orders placed by customers from the United States. You can write a query against the Orders table that returns orders where the customer ID is in the set of customer IDs of customers from the United States.
+
+1. Correlated subqueries are subqueries that refer to attributes from the tables that appear in the outer query. when you need to read every row in a table and comparing values in each row against related data.
+
+1. accepts a subquery as input and returns TRUE if the subquery returns any rows and FALSE otherwise. 
+
+1. negate the EXISTS predicate
+
+1. EXISTS uses two-valued logic and not three-valued logic. there’s no situation where it’s unknown whether a query returns any rows.
+
+1. SUM, COUNT, MIN, or MAX function

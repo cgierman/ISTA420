@@ -1,0 +1,29 @@
+# Chance Gierman
+
+## 10 Feb 2020
+
+1. A function that, for each row, computes a scalar result value based on a calculation against a subset of the rows from the underlying query.
+
+1. Restricts the window to the subset of rows that have the same values in the partitioning columns as in the current row.
+
+1. Defines ordering.
+
+1. Filters a frame, or a subset, of rows from the window partition between the two specified delimiters. 
+
+1. You use ranking window functions to rank each row with respect to others in the window. So you would use this to rank individuals by salary to see who mkes the most possibly?
+
+1. You use offset window functions to return an element from a row that is at a certain offset from the current row or at the beginning or end of a window frame.
+
+1. You use these functions to obtain an element from a row that is at a certain offset from the current row within the partition, based on the indicated ordering. The LAG function looks before the current row, and the LEAD function looks ahead.
+
+1. You use the FIRST_VALUE and LAST_VALUE functions to return an element from the first and last rows in the window frame, respectively.
+
+1. You use aggregate window functions to aggregate the rows in the defined window.
+
+1. Pivoting	data involves rotating data from a state of rows to a state of columns.
+
+1. In mathematics, the power set (or powerset) of any set S is the set of all subsets of S, including the empty set and S itself. So for grouping sets it would by usinging multiple sets.
+
+1. A bit array (also known as bit map, bit set, bit string, or bit vector) is an array data structure that compactly stores bits. You provide the function with all elements that participate in any grouping set as inputs and the function returns an integer bitmap in which each bit represents a different input element.
+
+1. Change the access permissions of file system objects (files and directories).

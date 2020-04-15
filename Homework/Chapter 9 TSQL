@@ -1,0 +1,50 @@
+# Chance Gierman
+
+## 30 March 2020
+
+1. A system-versioned temporal table has two columns representing the validity period of the
+row, plus a linked history table with a mirrored schema holding older states of modified
+rows
+
+1. The SQL standard supports three types of temporal tables:
+System-versioned temporal tables rely on the system transaction time to define the
+validity period of a row.
+Application-time period tables rely on the application’s definition of the validity period
+of a row. This means you can define a validity period that will become effective in the future.
+Bitemporal combines the two types just mentioned (transaction and valid time).
+
+
+1. A primary key
+Two columns defined as DATETIME2 with any precision, which are non-nullable and
+represent the start and end of the row’s validity period in the UTC time zone
+A start column that should be marked with the option GENERATED ALWAYS AS ROW
+START
+An end column that should be marked with the option GENERATED ALWAYS AS ROW
+END
+A designation of the period columns with the option PERIOD FOR SYSTEM_TIME
+(<startcol>, <endcol>)
+The table option SYSTEM_VERSIONING, which should be set to ON
+A linked history table (which SQL Server can create for you) to hold the past states of
+modified rows
+
+1. If you browse the object tree in Object Explorer in SQL Server Management Studio
+
+1. Modifying temporal tables is similar to modifying regular tables. You modify only the
+current table with INSERT, UPDATE, DELETE, and MERGE statements. (There’s no support
+for TRUNCATE in SQL Server 2016 temporal tables.) 
+
+1. Delete Statement.
+
+1. (Subclause) AS of @DATETIME (Qualifying Rows) sysstart <= @datetime and sysend > @datetime
+From @start TO @end, sysstart < @end AND sysend > @start
+Between @start AND @end, sysstart <= @end AND sysend > @start
+Contained in(@start, @end), sysstart >= @start AND sysend <= @end
+
+1. If you want to query the current state
+of the data, you simply query the current table as you would query a normal table. If you want
+to query a past state of the data, you still query the current table, but you add a clause called
+FOR SYSTEM_TIME and a subclause that indicates the validity point or period of time you’re
+interested in.
+
+1. Drop Table statement
+

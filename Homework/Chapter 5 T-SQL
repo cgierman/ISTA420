@@ -1,0 +1,27 @@
+# Chance Gierman
+
+## 03 Jan 2020
+
+1. A table expression is a named query expression that represents a valid relational table.
+
+1. Define in the FROM clause of an outer query. Their scope of existence is the outer query. As soon as the outer query is finished, the derived table is gone.
+
+1. you can refer to column aliases that were assigned in the SELECT clause of the inner query. This behavior helps you get around the fact that you can’t refer to column aliases assigned in the SELECT clause in query clauses that are logically processed prior to the SELECT clause (for example, WHERE or GROUP BY).
+
+1. AS Function
+
+1. NO
+
+1. The CTE already exists; therefore, you can refer to multiple instances of the same CTE in table operators like joins.
+
+1. Yes
+
+1. To prevent modifications through the view that conflict with the view’s filter. it pervents you from seeing additional information thats not needed.
+
+1. it binds the schema of referenced objects and columns to the schema of the referencing object. It indicates that referenced objects cannot be dropped and that referenced columns cannot be dropped or altered.
+
+1. reusable table expressions that support input parameters.
+
+1. allows us to invoke a table-valued function for each row returned by an outer table expression of a query.
+
+1. CROSS APPLY operator to return the three most recent orders. OUTER APPLY preserves all left rows. It keeps the rows from the left side for which there are no matches on the right side, and it uses NULLs as placeholders on the right side.

@@ -1,0 +1,25 @@
+# Chance Gierman
+
+## 16 Feb 2020
+
+1. No because you control the value-column associations instead of relying on the order of the columns in the CREATE TABLE statement.
+
+1. specify the target column names
+
+1. EXEC
+
+1. use a SELECT INTO statement with set operations, you specify the INTO clause right in front of the FROM clause of the first query.
+
+1. In the statement, you specify the target table, the source file, and options.
+
+1. no, If you need to guarantee uniqueness in an identity column, make sure you also define a primary key or a unique constraint on that column.
+
+1. use the CREATE SEQUENCE command.
+
+1. use sequence name, data type, min value and max value, and cycle
+
+1. ALTER SEQUENCE command
+
+1. The DELETE statement is a standard statement used to delete data from a table based on an optional filter predicate. and TRUNCATE statement deletes all rows from a table which has no fliter.
+
+1. in the Delete statement you can undo the opteration and Drop you cannot its permenant. 

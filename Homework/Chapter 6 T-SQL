@@ -1,0 +1,25 @@
+# Chance Gierman
+
+## 09 Feb 2020
+
+1. Set operators are operators that combine rows from two query result sets.
+
+1. A set operator expects multisets as inputs, the two queries involved cannot have ORDER BY clauses.
+
+1. A diagram representing mathematical or logical sets pictorially as circles or closed curves within an enclosing rectangle (the universal set), common elements of the sets being represented by the areas of overlap among the circles.
+
+1. The shaded area (or the inside of the Diagram) represents the result of the operator. The nonshaded areas reflect the fact that the operator doesn’t have to include all attributes of the original relations.
+
+1. The UNION ALL operator unifies the two input query results without attempting to remove duplicates from the result.
+
+1. The INTERSECT operator (implied DISTINCT) returns only distinct rows that appear in both input query results. As long as a row appears at least once in both query results, it’s returned only once in the operator’s result.
+
+1. INTERSECT ALL returns the number of duplicate rows matching the lower of the counts in both input multisets.
+
+1. The EXCEPT operator implements set differences. It operates on the results of two input queries and returns rows that appear in the first input but not the second.
+
+1. EXCEPT ALL returns only occurrences of a row from the first multiset that do not have a corresponding occurrence in the second.
+
+1. The INTERSECT operator precedes UNION and EXCEPT, and UNION and EXCEPT are evaluated in order of appearance.
+
+1. 
